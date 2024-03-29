@@ -15,11 +15,14 @@
         />
 
     <TextView
+        android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="결과"
-         />
+        android:text="더하기 프로그램"
+        android:gravity="center"
+        android:textSize="40dp"
+        />
 
     <Space
         android:layout_width="match_parent"
@@ -28,11 +31,14 @@
         />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvResult2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:text="textview" />
+        android:hint="결과 나오는 창"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
 
     <Space
         android:layout_width="match_parent"
@@ -41,11 +47,14 @@
         />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvNum"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="숫자" />
+        android:gravity="center"
+        android:text="숫자"
+        android:textSize="30dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,13 +64,15 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/editNum1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:ems="10"
-            android:inputType="text"
-            android:text="Name" />
+            android:inputType=""
+            android:hint="숫자 입력"
+            android:gravity="center"
+            />
 
         <Space
             android:layout_width="0dp"
@@ -73,8 +84,12 @@
             android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:gravity="center"
+            android:text="+"
+            android:textSize="30dp"
+            />
 
         <Space
             android:layout_width="0dp"
@@ -82,13 +97,16 @@
             android:layout_weight="1" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/editNum2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:ems="10"
             android:inputType="text"
-            android:text="Name" />
+            android:text=""
+            android:hint="숫자 입력"
+            android:gravity="center"
+            />
 
     </LinearLayout>
 
@@ -99,9 +117,13 @@
         />
 
     <Button
+        android:id="@+id/btnPlus"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        />
+        android:backgroundTint="#A4FDDE"
+        android:text="="
+        android:textColor="#000000"
+        android:textSize="30dp" />
 
 </LinearLayout>
