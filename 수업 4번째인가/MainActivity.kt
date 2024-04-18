@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         // 버튼 이번트 등록
         binding.btnCalc.setOnClickListener() {
-            binding.tvResult.text = when {
+            binding.tvResult.text = when {  // 자바의 스위치같은거
                 selectedOp ==0 -> {
                     (binding.editNum1.text.toString().toInt() +
                             binding.editNum2.text.toString().toInt()).toString()
@@ -51,15 +51,16 @@ class MainActivity : AppCompatActivity() {
         // 두 번째 방법의 문제는 -1) 여러번 사용할 때 - 수정해야 할 때 여러번 수정해야 함
 
         //2. 어댑터 만들기 이거 뒤 주석 다 알아야힘
-        val myAdapter = ArrayAdapter(this, // 어댑터를 만들 장소
+        val myAdapter = ArrayAdapter(this,                  // 어댑터를 만들 장소 -> 리소스에있는걸 가져와서 문자열 배열로 끼워넣는다
             android.R.layout.simple_spinner_dropdown_item,  // spinner의 모양 결정
-            items) // spinner에 넣을 데이터
+            items)                                          // spinner에 넣을 데이터
+        
         //3. 어댑터를 spinner 컴포넌트와 연결
-        binding.spinner.adapter = myAdapter
+        binding.spinner.adapter = myAdapter                 //교수님은 spinnerOperator
 
         //4. spinner에 이벤트 리스너 설정
         binding.spinner.onItemSelectedListener =    // = 코틀린 객체
-            object: AdapterView.OnItemSelectedListener {// 아이템이 선택되는걸 듣고 있어야한다
+            object: AdapterView.OnItemSelectedListener {// 스피너 이번트가 오브젝트가 어댑터 뷰 쓴다
                 // 정의 해야할 메서드가 둘 이상일 때
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -67,13 +68,13 @@ class MainActivity : AppCompatActivity() {
             }override fun onItemSelected(
                     parent: AdapterView<*>?, // 첫 번째 파라미터
                     view: View?, // 두 번째 파라미터
-                    position: Int,
+                    position: Int,  // 0부터
                     id: Long
             ) {
                     Log.d("check", "parent는 ${parent.toString()} 입니다") // spinner의 부모 클래스 컴포넌트
                     Log.d("check", "view는 ${view.toString()}") // spinner에서 실제 내용을 보여주는 컴포넌트
                     Log.d("check", "id는 ${position}") // 선택한 학목의 위치값으로 0부터, Array로 가지고온 뎅터의 배열 첨자
-                    Log.d("check", "선택한 항목은 ${id}") // id는 항목의 공유값으로 position이다.
+                    Log.d("check", "선택한 항목은 ${id}") // id는 항목의 공유값으로 position이다. // 성격 확인하려고 한거
                     selectedOp = position
             }
             }
