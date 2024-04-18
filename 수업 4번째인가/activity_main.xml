@@ -25,7 +25,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@drawable/box_border"
-        android:gravity="center_vertical|end"
+        android:gravity="center_vertical|end" //end == right
         android:text="0"
         android:textSize="40sp" />
 
@@ -53,9 +53,9 @@
             android:gravity="center_vertical|end"/>
 
         <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/spinner" // 교수님은 id를 spinnerOperation
+            android:layout_width="0dp"  // 뭘 했을때 widht / hight 0dp할지
+            android:layout_height="wrap_content" // 글자 크기만큼 -> match-parent 해도 문제 안생김 됨 할댱 된 공간은 달라지겠지만
             android:layout_weight="1"
             android:layout_gravity="center"/>
 
