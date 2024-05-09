@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image">
+        <item>@drawable/image1</item>
+        <item>@drawable/image2</item>
+    </string-array>
+</resources>
+values 폴더
