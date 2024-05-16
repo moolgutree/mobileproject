@@ -8,7 +8,6 @@ import androidx.appcompat.app.AlertDialog
 import kr.ac.dmu.ai051601.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private var checkResult : Int = 0
     private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
