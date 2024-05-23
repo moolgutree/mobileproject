@@ -12,6 +12,6 @@ create, start, resume 후에 전꺼 stop
 # activity 이동
 ![Activity 이동](https://github.com/moolgutree/mobileproject/blob/main/1%ED%95%99%EA%B8%B0/%EA%B8%B0%EB%A7%90/4/01/activity%20%EC%9D%B4%EB%8F%99.PNG)
 
-# 데이터 넘겨주기
+# 데이터 들고가기 -> 갖고오기는 조금 더 복잡함
 intent로 데이터 넘겨주는 작업
 데이터 꺼내오는 작업
