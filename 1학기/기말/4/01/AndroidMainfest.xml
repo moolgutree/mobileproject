@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- android:name=".MyApplication" 등록하면 시작 전에 MyApplication 등록함 -->
+    <!-- android:name=".MyApplication" 해야 시작할때 MyApplication 변수값 값 가짐(시작 전에 잠시 시작함) -->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
