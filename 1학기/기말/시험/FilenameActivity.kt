@@ -3,7 +3,6 @@ package kr.ac.dmu.testteacher
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kr.ac.dmu.testteacher.databinding.ActivityFilenameBinding
-import kr.ac.dmu.testteacher.databinding.ActivityMainBinding
 
 class FilenameActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
