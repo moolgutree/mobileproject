@@ -8,7 +8,7 @@ class Myapplication: Application() {
     }
 
     override fun onCreate() {
+        super.onCreate()  
         preferences = PreferenceUtil(applicationContext) // 앱 자기 자신
-        super.onCreate()
     }
 }
